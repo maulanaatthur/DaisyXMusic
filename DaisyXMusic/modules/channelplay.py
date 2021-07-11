@@ -524,11 +524,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
-                ],
-                [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                ],
+                ],                
                 [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
             ]
         )
@@ -578,11 +574,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
-                ],
-                [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                ],
+                ],     
                 [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
             ]
         )
@@ -717,8 +709,7 @@ async def deezer(client: Client, message_: Message):
                 InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
             ],
-            [InlineKeyboardButton(text="Listen On Deezer 🎬", url=f"{url}")],
-            [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
+                       [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -847,12 +838,7 @@ async def jiosaavn(client: Client, message_: Message):
                 InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
             ],
-            [
-                InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
-                )
-            ],
-            [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
+                        [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
         ]
     )
     file_path = await convert(wget.download(slink))
