@@ -609,11 +609,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
-                [
-                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                               [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -701,11 +697,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                         InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                        InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-                    ],
+                    ],                   
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
             )
@@ -859,11 +851,7 @@ async def ytplay(_, message: Message):
             [
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-            ],
+            ],            
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -1002,8 +990,7 @@ async def deezer(client: Client, message_: Message):
             [
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [InlineKeyboardButton(text="Listen On Deezer 🎬", url=f"{url}")],
+            ],          
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -1138,12 +1125,7 @@ async def jiosaavn(client: Client, message_: Message):
             [
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
-                )
-            ],
+            ],           
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -1247,11 +1229,7 @@ async def lol_cb(b, cb):
             [
                 InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                 InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
-            ],
-            [
-                InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
-                InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
-            ],
+            ],           
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
